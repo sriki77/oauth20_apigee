@@ -1,0 +1,40 @@
+{
+  "app" : [ {
+    "accessType" : "read",
+    "apiProducts" : [ ],
+    "appFamily" : "default",
+    "appId" : "e1c1f430-fb40-4a6f-a8a1-2143ed5bb8f8",
+    "attributes" : [ {
+      "name" : "Developer",
+      "value" : "tesla@weathersample.com"
+    }, {
+      "name" : "DisplayName",
+      "value" : "OAuth 2.0 App"
+    }, {
+      "name" : "Notes",
+      "value" : "App to acccess the OAuth 2.0 API"
+    } ],
+    "callbackUrl" : "http://tools.ietf.org/rfc/rfc6749.txt",
+    "createdAt" : 1386936099913,
+    "createdBy" : "noreply_admin@apigee.com",
+    "credentials" : [ {
+      "apiProducts" : [ {
+        "apiproduct" : "PremiumWeatherAPI",
+        "status" : "approved"
+      } ],
+      "attributes" : [ ],
+      "consumerKey" : "Ovu91UC94AyVMQFFsuGHnfiolM5c7OCA",
+      "consumerSecret" : "k5Am9WBAfJugpHF4",
+      "expiresAt" : -1,
+      "issuedAt" : 1386936100067,
+      "scopes" : [ ],
+      "status" : "approved"
+    } ],
+    "developerId" : "WZ3uMxwIzGpLabym",
+    "lastModifiedAt" : 1390616002007,
+    "lastModifiedBy" : "srikanth.seshadri@apigee.com",
+    "name" : "weatherapp",
+    "scopes" : [ ],
+    "status" : "approved"
+  } ]
+}

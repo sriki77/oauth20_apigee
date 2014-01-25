@@ -1,0 +1,14 @@
+{
+  "developer" : [ {
+    "apps" : [ "oauth20app" ],
+    "email" : "tesla@oauthsample.com",
+    "developerId" : "WZ3uMxwIzGpLabym",
+    "firstName" : "Nikolai",
+    "lastName" : "Tesla",
+    "userName" : "Nikolai",
+    "status" : "active",
+    "attributes" : [ ],
+    "createdAt" : 1386936099373,
+    "createdBy" : "noreply_admin@apigee.com"
+  } ]
+}

@@ -1,0 +1,35 @@
+{
+  "apiProduct" : [ {
+    "apiResources" : [ ],
+    "approvalType" : "auto",
+    "attributes" : [ {
+      "name" : "description",
+      "value" : "All the APIs Involved in OAuth 2.0 (RFC 6749)"
+    }, {
+      "name" : "access",
+      "value" : "public"
+    }, {
+      "name" : "developer.quota.limit",
+      "value" : "10000"
+    }, {
+      "name" : "developer.quota.interval",
+      "value" : "1"
+    }, {
+      "name" : "developer.quota.timeunit",
+      "value" : "month"
+    } ],
+    "createdAt" : 1386936099359,
+    "createdBy" : "noreply_admin@apigee.com",
+    "description" : "All the APIs Involved in OAuth 2.0 (RFC 6749)",
+    "displayName" : "OAuth 2.0 Product",
+    "environments" : [ "test" ],
+    "lastModifiedAt" : 1390616036408,
+    "lastModifiedBy" : "srikanth.seshadri@apigee.com",
+    "name" : "OAuth20Product",
+    "proxies" : [ "oauth" ],
+    "quota" : "10000",
+    "quotaInterval" : "1",
+    "quotaTimeUnit" : "month",
+    "scopes" : [ "READ" ]
+  } ]
+}

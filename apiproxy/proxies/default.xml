@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Flows>
+        <Flow name="AuthCodeAndAccessTokenImplicit">
+            <Request>
+                <Step>
+                    <Name>GenerateAuthCode</Name>
+                    <Condition>request.queryparam.response_type := "code"</Condition>
+                </Step>
+                <Step>
+                    <Name>GenerateAccessTokenImplicit</Name>
+                    <Condition>request.queryparam.response_type := "token"</Condition>
+                </Step>
+            </Request>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/authorize&quot;)</Condition>
+        </Flow>
+        <Flow name="RefreshAccessToken">
+            <Request>
+                <Step>
+                    <Name>RefreshAccessToken</Name>
+                </Step>
+            </Request>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/refresh_token&quot;)</Condition>
+        </Flow>
+        <Flow name="AccessToken">
+            <Request>
+                <Step>
+                    <FaultRules/>
+                    <Name>GenerateAccessToken</Name>
+                </Step>
+            </Request>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/token&quot;)</Condition>
+        </Flow>
+        <Flow name="RFCFlow">
+            <Request>
+                <Step>
+                    <FaultRules/>
+                    <Name>VerifyAccessToken</Name>
+                </Step>
+            </Request>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/rfc*.txt&quot;)</Condition>
+        </Flow>
+        <Flow name="InvalidRequest">
+            <Request>
+                <Step>
+                    <FaultRules/>
+                    <Name>InvalidRequestFault</Name>
+                </Step>
+            </Request>
+            <Condition>(request.path ~~ &quot;.*&quot;)</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/oauth</BasePath>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

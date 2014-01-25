@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="oauth">
+    <ConfigurationVersion minorVersion="0" majorVersion="4"/>
+    <Description>An API proxy that helps understand OAuth 2.0 RFC 6749</Description>
+    <DisplayName>oauth</DisplayName>
+    <validate>false</validate>
+</APIProxy>

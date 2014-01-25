@@ -1,0 +1,5 @@
+<OAuthV2 name="RefreshAccessToken">
+    <Operation>RefreshAccessToken</Operation>
+    <ExpiresIn>1800000</ExpiresIn>
+    <GenerateResponse/>
+</OAuthV2>

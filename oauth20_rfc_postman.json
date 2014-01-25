@@ -1,0 +1,141 @@
+{ "id" : "590d0f2d-b34a-2325-a880-2fda5b83cefb",
+  "name" : "Oauth20-Request-To-Apigee",
+  "requests" : [ { "collectionId" : "590d0f2d-b34a-2325-a880-2fda5b83cefb",
+        "data" : [ { "key" : "accesstoken",
+              "type" : "text",
+              "value" : "I7RRtzMWUwtdwPvIbwGvJbR78ju8"
+            } ],
+        "dataMode" : "urlencoded",
+        "description" : "",
+        "headers" : "",
+        "id" : "0a086bd6-e70b-55a2-196f-9bf74a8b6fc6",
+        "method" : "POST",
+        "name" : "Access protected resource",
+        "responses" : [  ],
+        "timestamp" : 0,
+        "url" : "http://{your_org}-test.apigee.net/oauth/rfc6749.txt",
+        "version" : 2
+      },
+      { "collectionId" : "590d0f2d-b34a-2325-a880-2fda5b83cefb",
+        "data" : [ { "key" : "grant_type",
+              "type" : "text",
+              "value" : "client_credentials"
+            },
+            { "key" : "client_id",
+              "type" : "text",
+              "value" : "Ovu91UC94AyVMQFFsuGHnfiolM5c7OCA"
+            },
+            { "key" : "client_secret",
+              "type" : "text",
+              "value" : "k5Am9WBAfJugpHF4"
+            }
+          ],
+        "dataMode" : "urlencoded",
+        "description" : "",
+        "headers" : "",
+        "id" : "36dc80e7-d739-6650-baca-21b2923f8449",
+        "method" : "POST",
+        "name" : "Access Token with client credentials",
+        "responses" : [  ],
+        "timestamp" : 0,
+        "url" : "https://{your_org}-test.apigee.net/oauth/token",
+        "version" : 2
+      },
+      { "collectionId" : "590d0f2d-b34a-2325-a880-2fda5b83cefb",
+        "data" : [ { "key" : "client_id",
+              "type" : "text",
+              "value" : "Ovu91UC94AyVMQFFsuGHnfiolM5c7OCA"
+            },
+            { "key" : "client_secret",
+              "type" : "text",
+              "value" : "k5Am9WBAfJugpHF4"
+            },
+            { "key" : "code",
+              "type" : "text",
+              "value" : "fedqGNAi"
+            },
+            { "key" : "redirect_uri",
+              "type" : "text",
+              "value" : "http://tools.ietf.org/rfc/rfc6749.txt"
+            },
+            { "key" : "grant_type",
+              "type" : "text",
+              "value" : "authorization_code"
+            }
+          ],
+        "dataMode" : "urlencoded",
+        "description" : "",
+        "headers" : "",
+        "id" : "37bf5265-7c0e-72e6-0035-7c0d4a239d05",
+        "method" : "POST",
+        "name" : "Access Token with auth code",
+        "time" : 1390618047333,
+        "timestamp" : 0,
+        "url" : "https://{your_org}-test.apigee.net/oauth/token",
+        "version" : 2
+      },
+      { "collectionId" : "590d0f2d-b34a-2325-a880-2fda5b83cefb",
+        "data" : [ { "key" : "username",
+              "type" : "text",
+              "value" : "tesla@oauthsample.com"
+            },
+            { "key" : "grant_type",
+              "type" : "text",
+              "value" : "password"
+            },
+            { "key" : "client_id",
+              "type" : "text",
+              "value" : "Ovu91UC94AyVMQFFsuGHnfiolM5c7OCA"
+            },
+            { "key" : "client_secret",
+              "type" : "text",
+              "value" : "k5Am9WBAfJugpHF4"
+            },
+            { "key" : "password",
+              "type" : "text",
+              "value" : "changeit"
+            }
+          ],
+        "dataMode" : "urlencoded",
+        "description" : "",
+        "headers" : "",
+        "id" : "4862ccd3-9eff-33d3-7e28-b9c914e4b996",
+        "method" : "POST",
+        "name" : "Access Token with password",
+        "responses" : [  ],
+        "timestamp" : 0,
+        "url" : "https://{your_org}-test.apigee.net/oauth/token",
+        "version" : 2
+      },
+      { "collectionId" : "590d0f2d-b34a-2325-a880-2fda5b83cefb",
+        "data" : [ { "key" : "client_id",
+              "type" : "text",
+              "value" : "Ovu91UC94AyVMQFFsuGHnfiolM5c7OCA"
+            },
+            { "key" : "client_secret",
+              "type" : "text",
+              "value" : "k5Am9WBAfJugpHF4"
+            },
+            { "key" : "grant_type",
+              "type" : "text",
+              "value" : "refresh_token"
+            },
+            { "key" : "refresh_token",
+              "type" : "text",
+              "value" : "I7RRtzMWUwtdwPvIbwGvJbR78ju8"
+            }
+          ],
+        "dataMode" : "urlencoded",
+        "description" : "",
+        "headers" : "",
+        "id" : "b80e593e-670f-5c1e-0443-bd527e5a0698",
+        "method" : "POST",
+        "name" : "Refresh Access Token",
+        "time" : 1390639737926,
+        "timestamp" : 0,
+        "url" : "https://{your_org}-test.apigee.net/oauth/refresh_token",
+        "version" : 2
+      }
+    ],
+  "timestamp" : 1390182053373
+}
