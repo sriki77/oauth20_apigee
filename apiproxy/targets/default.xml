@@ -3,5 +3,4 @@
     <HTTPTargetConnection>
         <URL>http://tools.ietf.org/rfc</URL>
     </HTTPTargetConnection>
-    </PostFlow>
 </TargetEndpoint>
